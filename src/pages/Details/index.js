@@ -10,6 +10,7 @@ import styles from './styles';
 
 import logoTree from '../../assets/tree_app.png';
 import logoUbuntu from '../../assets/logoubuntu.png';
+import logoPicpay from '../../assets/picpay-logo.png';
 
 export default function Details(){
     const navigation = useNavigation();
@@ -21,6 +22,10 @@ export default function Details(){
 
     function navigateBack(){
         navigation.goBack();
+    }
+
+    function navigateToPicpay(incident){
+        navigation.navigate('picpay', { incident });
     }
 
     function sendMail(){
@@ -37,6 +42,10 @@ export default function Details(){
 
     function goToInsta(){
         Linking.openURL(`https://www.instagram.com/${incident.insta}/`);
+    }
+
+    function goToPicpay(){
+        Linking.openURL(`https://app.picpay.com/user/${incident.picpay}/`);
     }
 
     return (
@@ -71,19 +80,23 @@ export default function Details(){
             <View style={styles.contactBox}>
                 <Text style={styles.contactText}>Se você gostaria de ajudar a ONG, escolha a forma de entrar em contato com ela!</Text>
                 <Text style={styles.contactTextDois}>Você consegue ajudar independente do valor. Entrar em contato já é um grande passo!</Text>
-                <View style={styles.contactAction}>
-                    <TouchableOpacity style={styles.button} onPress={goToInsta}>
-                        <Feather name="instagram" size={35} style={{marginLeft: 10}}/>
-                        <Text>Instagram</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.button} onPress={sendMail}>
-                        <Feather name="mail" size={35} style={{marginRight: 10}}/>
-                        <Text>E-mail</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.button} onPress={sendWhatsapp}>
-                        <Ionicons name="logo-whatsapp" size={35} color="green" style={{marginLeft: 12}}/>
-                        <Text>Whatsapp</Text>
-                    </TouchableOpacity>
+                <View style={styles.all1}>
+                        <TouchableOpacity style={styles.button} onPress={goToInsta}>
+                            <Text style={styles.helptext}>Instagram</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.button} onPress={sendMail}>
+                            <Text style={styles.helptext}>E-mail</Text>
+                        </TouchableOpacity>   
+                </View>
+                <View style={styles.all2}>    
+                        <TouchableOpacity style={styles.button} onPress={sendWhatsapp}>
+                            <Text style={styles.helptext}>Whatsapp</Text>
+                        </TouchableOpacity>                                                                          
+                        <TouchableOpacity 
+                         style={styles.button}
+                         onPress={() => navigateToPicpay(incident)}>
+                            <Text style={styles.helptext}>Picpay</Text>
+                        </TouchableOpacity>                                                                              
                 </View>
             </View>
             <Image source={logoUbuntu} style={styles.imageUbuntu}/>

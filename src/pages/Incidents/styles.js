@@ -40,6 +40,7 @@ export default StyleSheet.create({
 
     incidentUp: {
         fontWeight: "bold",
+        
     },
 
     incidentDown: {

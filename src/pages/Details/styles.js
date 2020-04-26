@@ -46,11 +46,17 @@ export default StyleSheet.create({
         padding: 24,
     },
 
-    contactAction: {
+    all1: {
+        marginTop: 16,
         flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-between",
-        marginTop: 30,
+        justifyContent: "space-between"
+        
+    },
+    all2: {
+        marginTop: 10,
+        flexDirection: "row",
+        justifyContent: "space-between"
+        
     },
 
     contactText: {
@@ -67,6 +73,21 @@ export default StyleSheet.create({
         
         marginLeft: "auto",
         marginRight: "auto",
+    },
+
+    button: {
+        backgroundColor: "#51964F",
+        borderRadius: 8,
+        height: 50,
+        width: "48%",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+
+    helptext: {
+        color: "#FFF",
+        fontSize: 15,
+        fontWeight: "bold"
     },
 
 

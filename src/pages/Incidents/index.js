@@ -54,7 +54,7 @@ export default function Incidents(){
                 <Image source={logoUbuntu} />
                 
             </View>
-            <Text style={styles.countText}><Text style={styles.incidentUp}>{total} casos </Text>cadastrados</Text>
+            <Text style={styles.countText}>{total} casos cadastrados</Text>
             
             <FlatList
                 data={incidents}
