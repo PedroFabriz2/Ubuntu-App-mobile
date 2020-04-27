@@ -44,10 +44,6 @@ export default function Details(){
         Linking.openURL(`https://www.instagram.com/${incident.insta}/`);
     }
 
-    function goToPicpay(){
-        Linking.openURL(`https://app.picpay.com/user/${incident.picpay}/`);
-    }
-
     return (
         <ScrollView style={styles.container}
         contentInset={{bottom: 50}}
