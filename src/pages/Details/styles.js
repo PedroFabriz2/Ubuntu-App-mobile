@@ -84,10 +84,26 @@ export default StyleSheet.create({
         alignItems: "center"
     },
 
+    buttonPicpay: {
+        backgroundColor: "#ffffff",
+        borderRadius: 8,
+        borderColor: "#51964F",
+        height: 50,
+        width: "48%",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+
     helptext: {
         color: "#FFF",
         fontSize: 15,
         fontWeight: "bold"
+    },
+
+    picpay: {
+        width: 100,
+        height: 32,
+        
     },
 
 

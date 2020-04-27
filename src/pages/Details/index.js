@@ -82,20 +82,20 @@ export default function Details(){
                 <Text style={styles.contactTextDois}>Você consegue ajudar independente do valor. Entrar em contato já é um grande passo!</Text>
                 <View style={styles.all1}>
                         <TouchableOpacity style={styles.button} onPress={goToInsta}>
-                            <Text style={styles.helptext}>Instagram</Text>
+                        <Feather name="instagram" size={35} style={{color: "#ffffff"}}/>
                         </TouchableOpacity>
                         <TouchableOpacity style={styles.button} onPress={sendMail}>
-                            <Text style={styles.helptext}>E-mail</Text>
+                        <Feather name="mail" size={35} style={{color: "#ffffff"}}/>
                         </TouchableOpacity>   
                 </View>
                 <View style={styles.all2}>    
                         <TouchableOpacity style={styles.button} onPress={sendWhatsapp}>
-                            <Text style={styles.helptext}>Whatsapp</Text>
+                        <Ionicons name="logo-whatsapp" size={35} color="white" />
                         </TouchableOpacity>                                                                          
                         <TouchableOpacity 
-                         style={styles.button}
+                         style={styles.buttonPicpay}
                          onPress={() => navigateToPicpay(incident)}>
-                            <Text style={styles.helptext}>Picpay</Text>
+                            <Image source={logoPicpay} style={styles.picpay} />
                         </TouchableOpacity>                                                                              
                 </View>
             </View>
