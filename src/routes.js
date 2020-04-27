@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import Incidents from './pages/Incidents';
 import Details from './pages/Details';
 import picpay from './pages/picpay';
+import Info from './pages/Info';
 
 const AppStack = createStackNavigator();
 
@@ -15,6 +16,7 @@ export default function Routes(){
                 <AppStack.Screen name="Incidents" component={Incidents}/>
                 <AppStack.Screen name="Details" component={Details}/>
                 <AppStack.Screen name="picpay" component={picpay}/>
+                <AppStack.Screen name="Info" component={Info}/>
             </AppStack.Navigator>
         </NavigationContainer>
     );

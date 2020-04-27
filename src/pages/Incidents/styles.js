@@ -19,6 +19,7 @@ export default StyleSheet.create({
         textAlign: "center",
         color: "#51964F",
         marginBottom: 10,
+        marginTop: 20,
     },
 /** 
     welcomeText: {
@@ -57,4 +58,21 @@ export default StyleSheet.create({
         fontWeight: "bold",
         color: "#51964F",
     },
+
+    button: {
+        backgroundColor: "#ffffff",
+        borderRadius: 8,
+        height: 20,
+        width: "100%",
+        justifyContent: "center",
+        alignItems: "center",
+        borderColor: "#51964F",
+        borderWidth: 1,
+    },
+
+    textbutton: {
+        color: "#51964F",
+
+    },
+
 });

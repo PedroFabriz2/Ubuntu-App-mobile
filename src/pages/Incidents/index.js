@@ -22,6 +22,10 @@ export default function Incidents(){
         navigation.navigate('Details', { incident });
     }
 
+    function goToInfo(){
+        navigation.navigate('Info');
+    }
+
     async function loadIncidents() {
         if (loading) {
             return;
@@ -51,8 +55,14 @@ export default function Incidents(){
         <View style={styles.container}>
             <View style={styles.header}>
                 <Image source={logoTree} />
-                <Image source={logoUbuntu} />
-                
+                <View style={styles.saibamais}>
+                    <Image source={logoUbuntu} />
+                    <TouchableOpacity style={styles.button}>
+                            <Text style={styles.textbutton} onPress={goToInfo}>
+                                Saiba mais
+                            </Text>
+                    </TouchableOpacity>
+                </View>
             </View>
             <Text style={styles.countText}>{total} casos cadastrados</Text>
             

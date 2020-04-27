@@ -16,9 +16,11 @@ export default StyleSheet.create({
     },
  
     image: {
-        width: 190,
+        width: 186.005314438,
         height: 60,
-        marginTop: 30,
+        display: "flex",
+        alignItems: "center",
+        marginTop: 25,
     },
 
     box: {
@@ -46,5 +48,17 @@ export default StyleSheet.create({
         fontWeight: "bold",
         textAlign: "center",
         marginTop: 20,
+    },
+
+    button: {
+        display: "flex",
+        alignItems: "center",
+        top: "10%",
+       
+    },
+
+    header: {
+        display: "flex",
+        alignItems: "center",
     }
 })

@@ -20,7 +20,9 @@ export default function Details(){
     return (
         <View style={styles.container}>
             <View style={styles.subContainer}>
-                <Image source={logoPicpay} style={styles.image}/>
+                <View style={styles.header}>
+                    <Image source={logoPicpay} style={styles.image}/>
+                </View>
                 <View style={styles.box}>
                     <Text style={styles.textbox}>@{incident.picpay}</Text>
                 </View>
@@ -28,7 +30,7 @@ export default function Details(){
                     <Text style={styles.texthelp2}>O picpay acima recebe pela {incident.nome}!</Text>
                     
                     <TouchableOpacity style={styles.button} onPress={navigateBack}>
-                    <Feather name="arrow-left" size={25} style={{marginTop: 90, marginLeft: 80}} />
+                    <Feather name="arrow-left" size={25} />
                     </TouchableOpacity>
             </View>
         </View>
