@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "mobile_ubuntu",
+    "name": "TreeApp",
     "slug": "mobile_ubuntu",
     "platforms": [
       "ios",
-      "android",
-      "web"
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -22,7 +22,14 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ubuntu.treeapp",
+      "buildNumber": "1.0.0"
+    },
+
+    "android": {
+      "package": "com.ubuntu.treeapp",
+      "versionCode": 1
     }
   }
 }
