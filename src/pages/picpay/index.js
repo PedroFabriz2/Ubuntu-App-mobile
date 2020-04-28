@@ -7,6 +7,7 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 import styles from './styles';
 
 import logoPicpay from '../../assets/picpay-logo.png';
+import logoUbuntu from '../../assets/logoubuntu.png';
 
 export default function Details(){
     const route = useRoute();
@@ -30,8 +31,11 @@ export default function Details(){
                     <Text style={styles.texthelp2}>O picpay acima recebe pela {incident.nome}!</Text>
                     
                     <TouchableOpacity style={styles.button} onPress={navigateBack}>
-                    <Feather name="arrow-left" size={25} />
+                    <Text style={styles.textbutton}>Voltar</Text>
                     </TouchableOpacity>
+                    <View style={styles.imageUbuntu}>
+                        <Image source={logoUbuntu} />
+                    </View>
             </View>
         </View>
             

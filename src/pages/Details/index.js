@@ -9,7 +9,7 @@ import * as MailComposer from 'expo-mail-composer';
 import styles from './styles';
 
 import logoTree from '../../assets/tree_app.png';
-import logoUbuntu from '../../assets/logoubuntu.png';
+
 import logoPicpay from '../../assets/picpay-logo.png';
 
 export default function Details(){
@@ -95,7 +95,7 @@ export default function Details(){
                         </TouchableOpacity>                                                                              
                 </View>
             </View>
-            <Image source={logoUbuntu} style={styles.imageUbuntu}/>
+            
         </ScrollView>
     );
 }

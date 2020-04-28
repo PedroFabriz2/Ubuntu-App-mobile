@@ -69,12 +69,6 @@ export default StyleSheet.create({
         fontSize: 15,
     },
 
-    imageUbuntu: {
-        
-        marginLeft: "auto",
-        marginRight: "auto",
-    },
-
     button: {
         backgroundColor: "#51964F",
         borderRadius: 8,
@@ -104,7 +98,5 @@ export default StyleSheet.create({
         width: 100,
         height: 32,
         
-    },
-
-
+    }
 })

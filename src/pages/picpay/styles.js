@@ -51,14 +51,24 @@ export default StyleSheet.create({
     },
 
     button: {
+        justifyContent: "center",
         display: "flex",
         alignItems: "center",
         top: "10%",
-       
+    },
+
+    textbutton: {
+        color: "#51964F",
     },
 
     header: {
         display: "flex",
+        alignItems: "center",
+    },
+
+    imageUbuntu: {
+        display: "flex",
+        top: "20%",
         alignItems: "center",
     }
 })
