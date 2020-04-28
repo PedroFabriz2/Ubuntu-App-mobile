@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, FlatList, Image, Text, TouchableOpacity } from 'react-native';
+import { View, FlatList, Image, Text, TouchableOpacity, TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
 
@@ -46,6 +46,26 @@ export default function Incidents(){
         setPage(page + 1);
         setLoading(false);
     }
+    async function loadIncidentsSearch() {
+        if (loading) {
+            return;
+        }
+        if (total > 0 && incidents.length === total) {
+            return;
+        }
+
+        setLoading(true);
+
+
+        const response = await api.get('incidents', {
+            params: { page },//para pegar todas as paginas de incidents
+        });
+
+        setIncidents([...incidents, ...response.data.name]);//isso permite carregar pagina 1 e as outras ao msm tempo
+        setTotal(response.headers['x-total-count']);
+        setPage(page + 1);
+        setLoading(false);
+    }
 
     useEffect(()=>{
         loadIncidents();
@@ -65,7 +85,13 @@ export default function Incidents(){
                 </View>
             </View>
             <Text style={styles.countText}>{total} casos cadastrados</Text>
-            
+            <View style={styles.search}>
+                <TextInput 
+                    placeholder="Buscar por ONG"
+                    autoCorrect={false}
+
+                />
+            </View>
             <FlatList
                 data={incidents}
                 style={styles.incidentsList}

@@ -72,7 +72,14 @@ export default StyleSheet.create({
 
     textbutton: {
         color: "#51964F",
-
     },
+
+    search: {
+        borderColor: "#D5E8E7",
+        borderWidth: 3,
+        borderRadius: 12,
+        padding: 10,
+        marginBottom: 2,
+    }
 
 });
