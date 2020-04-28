@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/44576768/80531289-c143a600-8970-11ea-8161-086e3028eaac.png">
+</p>
+
+
 # TreeApp:palm_tree:
 
 
@@ -15,6 +20,13 @@ Basically, the App shows every necessity that registered NGOs(in our site) have.
 to poor communities in Africa.
 
 Anyone with the app installed can get in touch with the NGO (using email, whatsapp, instagram) or can donate some cash with [PicPay](https://www.picpay.com/site)
+<div>
+<img src="https://user-images.githubusercontent.com/44576768/80530076-de777500-896e-11ea-9312-8530249c013f.jpeg" width="200" />
+
+<img src="https://user-images.githubusercontent.com/44576768/80530070-dcadb180-896e-11ea-8c4f-304f26f030ed.jpeg" width="200" />
+</div>
+
+_mobile prints in portuguese_
 
 ---
 ## :hammer: Technologies
@@ -24,3 +36,6 @@ Anyone with the app installed can get in touch with the NGO (using email, whatsa
 * [React Native](https://reactnative.dev/)
 * [Nodemon](https://nodemon.io/)
 * [Insomnia](https://insomnia.rest/)
+
+## :white_check_mark: About
+* This app is supported by Brazilian NGO (Atitude Ubuntu)[https://www.instagram.com/atitudeubuntu/]
