@@ -39,3 +39,9 @@ _mobile prints in portuguese_
 
 ## :white_check_mark: About
 * This app is supported by Brazilian NGO (Atitude Ubuntu)[https://www.instagram.com/atitudeubuntu/]
+
+## PlayStore
+
+<img width="840" alt="Screen Shot 2020-05-05 at 21 22 18" src="https://user-images.githubusercontent.com/44576768/81129154-d5137d00-8f19-11ea-98ab-5c0dbd306f66.png">
+
+[Link for download](https://play.google.com/store/apps/details?id=com.ubuntu.treeapp)
